@@ -1,0 +1,101 @@
+# Robot name goes here
+spiderbot:
+  # default controller
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Controller Front Right
+  controller_front_right_link0:
+    type: effort_controllers/JointPositionController 
+    joint: joint_front_right_link0
+    pid : {p: 1000, i: 50.0, d: 20.0}
+    gazebo_ros_control:
+      pid_gains:
+        joint_front_right_link0:
+          p = 1000
+          i = 50.0
+          d = 20.0
+
+  controller_front_right_link1:
+    type: effort_controllers/JointPositionController 
+    joint: joint_front_right_link1
+    pid : {p: 1000, i: 50.0, d: 20.0}
+    gazebo_ros_control:
+      pid_gains:
+        joint_front_right_link1:
+          p = 1000
+          i = 50.0
+          d = 20.0
+
+  # Controller Front Left
+  controller_front_left_link0:
+    type: effort_controllers/JointPositionController 
+    joint: joint_front_left_link0
+    pid : {p: 1000, i: 50.0, d: 20.0}
+    gazebo_ros_control:
+      pid_gains:
+        joint_front_left_link0:
+          p = 1000
+          i = 50.0
+          d = 20.0
+
+  controller_front_left_link1:
+    type: effort_controllers/JointPositionController 
+    joint: joint_front_left_link1
+    pid : {p: 1000, i: 50.0, d: 20.0}
+    gazebo_ros_control:
+      pid_gains:
+        joint_front_left_link1:
+          p = 1000
+          i = 50.0
+          d = 20.0
+
+  # Controller Rear Right
+  controller_rear_right_link0:
+    type: effort_controllers/JointPositionController 
+    joint: joint_rear_right_link0
+    pid : {p: 1000, i: 50.0, d: 20.0}
+    gazebo_ros_control:
+      pid_gains:
+        joint_rear_right_link0:
+          p = 1000
+          i = 50.0
+          d = 20.0
+
+  controller_rear_right_link1:
+    type: effort_controllers/JointPositionController 
+    joint: joint_rear_right_link1
+    pid : {p: 1000, i: 50.0, d: 20.0}
+    gazebo_ros_control:
+      pid_gains:
+        joint_rear_right_link1:
+          p = 1000
+          i = 50.0
+          d = 20.0
+
+  # Controller Rear Left
+  controller_rear_left_link0:
+    type: effort_controllers/JointPositionController 
+    joint: joint_rear_left_link0
+    pid : {p: 1000, i: 50.0, d: 20.0}
+    gazebo_ros_control:
+      pid_gains:
+        joint_rear_left_link0:
+          p = 1000
+          i = 50.0
+          d = 20.0
+
+  controller_rear_left_link1:
+    type: effort_controllers/JointPositionController 
+    joint: joint_rear_left_link1
+    pid : {p: 1000, i: 50.0, d: 20.0}
+    gazebo_ros_control:
+      pid_gains:
+        joint_rear_left_link1:
+          p = 1000
+          i = 50.0
+          d = 20.0
+
+
+ 
