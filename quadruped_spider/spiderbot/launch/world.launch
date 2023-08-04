@@ -25,12 +25,12 @@
 
 
     <!-- Controller spawner: Starts all the defined controllers with their configs. Just add your controller names defined in your config file into the args tag below   -->
-    <!-- <node name="controller_spwaner" pkg="controller_manager" type="spawner" respawn="false"
+    <node name="controller_spwaner" pkg="controller_manager" type="spawner" respawn="false"
     	output="screen" ns="/spiderbot" args="joint_state_controller 
         controller_front_right_link0 controller_front_right_link1
         controller_front_left_link0 controller_front_left_link1
         controller_rear_right_link0 controller_rear_right_link1
-        controller_rear_left_link0 controller_rear_left_link1"/> -->
+        controller_rear_left_link0 controller_rear_left_link1"/>
 
     <!-- A node to publish the robot states onto ros network -->
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen"/>	
@@ -45,12 +45,12 @@
 
 
 	<!--Default node -->
-	<!-- <node
+	<node
     name="fake_joint_calibration"
     pkg="rostopic"
     type="rostopic"
     args="pub /calibrated std_msgs/Bool true" />
- -->
+
 
     <!-- Node for launching Rviz -->
     <!-- <node type="rviz" name="rviz" pkg="rviz" args="-d $(find spiderbot)/urdf/urdf.rviz" /> -->

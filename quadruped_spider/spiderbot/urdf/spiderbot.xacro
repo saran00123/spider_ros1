@@ -167,28 +167,28 @@
 		<material>Gazebo/Blue</material>
 	</gazebo>
     <gazebo reference="front_right_link1">
-		<material>Gazebo/Green</material>
+		<material>Gazebo/Grey</material>
 	</gazebo>
 
     <gazebo reference="front_left_link0">
 		<material>Gazebo/Blue</material>
 	</gazebo>
     <gazebo reference="front_left_link1">
-		<material>Gazebo/Green</material>
+		<material>Gazebo/Grey</material>
 	</gazebo>
 
     <gazebo reference="rear_right_link0">
 		<material>Gazebo/Blue</material>
 	</gazebo>
     <gazebo reference="rear_right_link1">
-		<material>Gazebo/Green</material>
+		<material>Gazebo/Grey</material>
 	</gazebo>
 
     <gazebo reference="rear_left_link0">
 		<material>Gazebo/Blue</material>
 	</gazebo>
     <gazebo reference="rear_left_link1">
-		<material>Gazebo/Green</material>
+		<material>Gazebo/Grey</material>
 	</gazebo>
     
 
