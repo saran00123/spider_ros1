@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+
+<robot name="spiderbotv8" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/</robotNamespace>
+    </plugin>
+  </gazebo>
+
+    <gazebo reference="base_link">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <selfCollide>true</selfCollide>
+        <gravity>true</gravity>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+
+    <gazebo reference="r1">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <selfCollide>true</selfCollide>
+        <gravity>true</gravity>
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="r2">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <selfCollide>true</selfCollide>
+        <gravity>true</gravity>
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="l1">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <selfCollide>true</selfCollide>
+        <gravity>true</gravity>
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="l2">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <selfCollide>true</selfCollide>
+        <gravity>true</gravity>
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="sr1">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <selfCollide>true</selfCollide>
+        <gravity>true</gravity>
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="sr2">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <selfCollide>true</selfCollide>
+        <gravity>true</gravity>
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="sl1">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <selfCollide>true</selfCollide>
+        <gravity>true</gravity>
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="sl2">
+        <mu1>0.2</mu1>
+        <mu2>0.2</mu2>
+        <selfCollide>true</selfCollide>
+        <gravity>true</gravity>
+        <material>Gazebo/Black</material>
+    </gazebo>
+</robot>

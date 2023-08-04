@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+
+<robot name="spiderbotv8" xmlns:xacro="http://ros.org/wiki/xacro">
+
+
+    <transmission name="left_front_leg_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <actuator name="left_front_leg_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+      <joint name="left1">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+    </transmission>
+
+    <transmission name="left_rear_leg_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <actuator name="left_rear_leg_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+      <joint name="left2">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+    </transmission>
+
+    <transmission name="right_front_leg_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <actuator name="right_front_leg_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+      <joint name="right1">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+    </transmission>
+
+    <transmission name="right_rear_leg_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <actuator name="right_rear_leg_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+      <joint name="right2">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+    </transmission>
+
+
+
+    <transmission name="left_front_leg2_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <actuator name="left_front_leg2_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+      <joint name="suppleft1">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+    </transmission>
+
+    <transmission name="left_rear_leg2_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <actuator name="left_rear_leg2_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+      <joint name="suppleft2">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+    </transmission>
+
+    <transmission name="right_front_leg2_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <actuator name="right_front_leg2_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+      <joint name="suppright1">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+    </transmission>
+
+    <transmission name="right_rear_leg2_trans">
+      <type>transmission_interface/SimpleTransmission</type>
+      <actuator name="right_rear_leg2_motor">
+        <mechanicalReduction>1</mechanicalReduction>
+      </actuator>
+      <joint name="suppright2">
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      </joint>
+    </transmission>
+
+</robot>

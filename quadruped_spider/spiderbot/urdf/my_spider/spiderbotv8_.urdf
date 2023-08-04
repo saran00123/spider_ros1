@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot name="spiderbot">
+    <link name="base_link">
+        <inertial>
+            <origin xyz="6.52377531783468E-05 -0.0021170715917473 0.0364107331720625" rpy="0 0 0" />
+            <mass value="1.0797" />
+            <inertia ixx="3.02647463521448E-05" ixy="1.57081847985685E-09" ixz="3.15890627766527E-11" iyy="1.78058902607528E-05" iyz="-1.01459254458863E-07" izz="4.36287378114362E-05" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/base_link.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/base_link.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="front_right_link0">
+        <inertial>
+            <origin xyz="-0.020499999920902 0.000389285101961867 0.0198892805772913" rpy="0 0 0" />
+            <mass value="0.071655" />
+            <inertia ixx="7.56087099566393E-07" ixy="2.42840649896817E-09" ixz="-2.42840649896825E-09" iyy="5.95760525058341E-07" iyz="2.50084225320641E-09" izz="5.95760523642093E-07" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_front_right_link0" type="revolute">
+        <origin xyz="-0.030488 -0.027296 0.0193" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="front_right_link0" />
+        <axis xyz="0 0 -1" />
+        <limit lower="-3.14" upper="3.14" effort="2" velocity="0.2" />
+    </joint>
+    <link name="front_right_link1">
+        <inertial>
+            <origin xyz="-0.0103855500283455 0.0172280687962712 0.000907834339010391" rpy="0 0 0" />
+            <mass value="0.069773" />
+            <inertia ixx="6.06191507620996E-07" ixy="-2.6357706811751E-08" ixz="-4.62613535616074E-08" iyy="2.09883870458556E-06" iyz="-5.7703659796975E-16" izz="2.33635633104651E-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_front_right_link1" type="revolute">
+        <origin xyz="-0.041 -0.0195 0.0195" rpy="0 0 0" />
+        <parent link="front_right_link0" />
+        <child link="front_right_link1" />
+        <axis xyz="0 -1 0" />
+        <limit lower="-3.14" upper="3.14" effort="2" velocity="0.2" />
+    </joint>
+    <!-- left link front -->
+    <link name="front_left_link0">
+        <inertial>
+            <origin xyz="-0.020499999920902 0.000389285101961867 0.0198892805772913" rpy="0 0 0" />
+            <mass value="0.071655" />
+            <inertia ixx="7.56087099566393E-07" ixy="2.42840649896817E-09" ixz="-2.42840649896825E-09" iyy="5.95760525058341E-07" iyz="2.50084225320641E-09" izz="5.95760523642093E-07" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_front_left_link0" type="revolute">
+        <origin xyz="0.030488 -0.027296 0.0193" rpy="0 0 3.1417" />
+        <parent link="base_link" />
+        <child link="front_left_link0" />
+        <axis xyz="0 0 -1" />
+        <limit lower="-3.14" upper="3.14" effort="2" velocity="0.2" />
+    </joint>
+    <link name="front_left_link1">
+        <inertial>
+            <origin xyz="-0.0103855500283455 0.0172280687962712 0.000907834339010391" rpy="0 0 0" />
+            <mass value="0.069773" />
+            <inertia ixx="6.06191507620996E-07" ixy="-2.6357706811751E-08" ixz="-4.62613535616074E-08" iyy="2.09883870458556E-06" iyz="-5.7703659796975E-16" izz="2.33635633104651E-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_front_left_link1" type="revolute">
+        <origin xyz="-0.041 -0.0195 0.0195" rpy="0 0 0" />
+        <parent link="front_left_link0" />
+        <child link="front_left_link1" />
+        <axis xyz="0 -1 0" />
+        <limit lower="-3.14" upper="3.14" effort="2" velocity="0.2" />
+    </joint>
+    <link name="rear_right_link0">
+        <inertial>
+            <origin xyz="-0.020499999920902 0.000389285101961867 0.0198892805772913" rpy="0 0 0" />
+            <mass value="0.071655" />
+            <inertia ixx="7.56087099566393E-07" ixy="2.42840649896817E-09" ixz="-2.42840649896825E-09" iyy="5.95760525058341E-07" iyz="2.50084225320641E-09" izz="5.95760523642093E-07" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_rear_right_link0" type="revolute">
+        <origin xyz="-0.030488 0.027296 0.0193" rpy="0 0 0" />
+        <parent link="base_link" />
+        <child link="rear_right_link0" />
+        <axis xyz="0 0 -1" />
+        <limit lower="-3.14" upper="3.14" effort="2" velocity="0.2" />
+    </joint>
+    <link name="rear_right_link1">
+        <inertial>
+            <origin xyz="-0.0103855500283455 0.0172280687962712 0.000907834339010391" rpy="0 0 0" />
+            <mass value="0.069773" />
+            <inertia ixx="6.06191507620996E-07" ixy="-2.6357706811751E-08" ixz="-4.62613535616074E-08" iyy="2.09883870458556E-06" iyz="-5.7703659796975E-16" izz="2.33635633104651E-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_rear_right_link1" type="revolute">
+        <origin xyz="-0.041 -0.0195 0.0195" rpy="0 0 0" />
+        <parent link="rear_right_link0" />
+        <child link="rear_right_link1" />
+        <axis xyz="0 -1 0" />
+        <limit lower="-3.14" upper="3.14" effort="2" velocity="0.2" />
+    </joint>
+    <!-- back left -->
+    <link name="rear_left_link0">
+        <inertial>
+            <origin xyz="-0.020499999920902 0.000389285101961867 0.0198892805772913" rpy="0 0 0" />
+            <mass value="0.071655" />
+            <inertia ixx="7.56087099566393E-07" ixy="2.42840649896817E-09" ixz="-2.42840649896825E-09" iyy="5.95760525058341E-07" iyz="2.50084225320641E-09" izz="5.95760523642093E-07" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_rear_left_link0" type="revolute">
+        <origin xyz="0.030488 0.027296 0.0193" rpy="0 0 3.1417" />
+        <parent link="base_link" />
+        <child link="rear_left_link0" />
+        <axis xyz="0 0 -1" />
+        <limit lower="-3.14" upper="3.14" effort="2" velocity="0.2" />
+    </joint>
+    <link name="rear_left_link1">
+        <inertial>
+            <origin xyz="-0.0103855500283455 0.0172280687962712 0.000907834339010391" rpy="0 0 0" />
+            <mass value="0.069773" />
+            <inertia ixx="6.06191507620996E-07" ixy="-2.6357706811751E-08" ixz="-4.62613535616074E-08" iyy="2.09883870458556E-06" iyz="-5.7703659796975E-16" izz="2.33635633104651E-06" />
+        </inertial>
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+            </geometry>
+            <material name="">
+                <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+            </material>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="joint_rear_left_link1" type="revolute">
+        <origin xyz="-0.041 -0.0195 0.0195" rpy="0 0 0" />
+        <parent link="rear_left_link0" />
+        <child link="rear_left_link1" />
+        <axis xyz="0 -1 0" />
+        <limit lower="-3.14" upper="3.14" effort="2" velocity="0.2" />
+    </joint>
+   
+    <!--Transmission Definitions -->
+ <!--Transmission Front Right Links -->
+ <transmission name="transmission_front_right_link0">
+  <type>SimpleTransmission</type>
+  <joint name="joint_front_right_link0">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_front_right_link0">
+    <mechanicalReduction>1</mechanicalReduction>
+    <hardwareInterface>VelocityJointInterface</hardwareInterface>
+  </actuator>
+</transmission>
+
+<transmission name="transmission_front_right_link1">
+  <type>SimpleTransmission</type>
+  <joint name="joint_front_right_link1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_front_right_link1">
+    <mechanicalReduction>1</mechanicalReduction>
+    <hardwareInterface>VelocityJointInterface</hardwareInterface>
+  </actuator>
+</transmission>
+
+<!--Transmission Front Left Links -->
+<transmission name="transmission_front_left_link0">
+  <type>SimpleTransmission</type>
+  <joint name="joint_front_left_link0">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_front_left_link0">
+    <mechanicalReduction>1</mechanicalReduction>
+    <hardwareInterface>VelocityJointInterface</hardwareInterface>
+  </actuator>
+</transmission>
+
+<transmission name="transmission_front_left_link1">
+  <type>SimpleTransmission</type>
+  <joint name="joint_front_left_link1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_front_left_link1">
+    <mechanicalReduction>1</mechanicalReduction>
+    <hardwareInterface>VelocityJointInterface</hardwareInterface>
+  </actuator>
+</transmission>
+
+  <!--Transmission Rear Right Links -->
+<transmission name="transmission_rear_right_link0">
+  <type>SimpleTransmission</type>
+  <joint name="joint_rear_right_link0">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_rear_right_link0">
+    <mechanicalReduction>1</mechanicalReduction>
+    <hardwareInterface>VelocityJointInterface</hardwareInterface>
+  </actuator>
+</transmission>
+
+<transmission name="transmission_rear_right_link1">
+  <type>SimpleTransmission</type>
+  <joint name="joint_rear_right_link1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_rear_right_link1">
+    <mechanicalReduction>1</mechanicalReduction>
+    <hardwareInterface>VelocityJointInterface</hardwareInterface>
+  </actuator>
+</transmission>
+
+<!--Transmission Rear Left Links -->
+<transmission name="transmission_rear_left_link0">
+  <type>SimpleTransmission</type>
+  <joint name="joint_rear_left_link0">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_rear_left_link0">
+    <mechanicalReduction>1</mechanicalReduction>
+    <hardwareInterface>VelocityJointInterface</hardwareInterface>
+  </actuator>
+</transmission>
+
+<transmission name="transmission_rear_left_link1">
+  <type>SimpleTransmission</type>
+  <joint name="joint_rear_left_link1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="motor_rear_left_link1">
+    <mechanicalReduction>1</mechanicalReduction>
+    <hardwareInterface>VelocityJointInterface</hardwareInterface>
+  </actuator>
+</transmission>
+</robot>

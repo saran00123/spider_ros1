@@ -6,7 +6,7 @@
 <!-- Include your urdf files here -->
 	<!-- Include Robot's urdf filepath -->
 	<!-- Include Lidar's urdf filepath -->
-	<xacro:include filename="$(find spiderbot)/urdf/spiderbot.urdf"/>
+	<xacro:include filename="$(find spiderbot)/urdf/my_spider/spiderbotv8_.urdf"/>
 	<xacro:include filename="$(find spiderbot)/urdf/ydlidar.urdf"/>
 
 <!-- Add your gazebo sensors here -->

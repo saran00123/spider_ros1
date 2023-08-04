@@ -12,7 +12,7 @@
     name="urdf_spawner"
     pkg="gazebo_ros"
     type="spawn_model"
-    args="-file $(find spiderbot)/urdf/spiderbot.urdf -urdf -model spiderbot -x 0 -y 0 -z 0.0615"
+    args="-file $(find spiderbot)/urdf/my_spider/spiderbotv8_.urdf -urdf -model spiderbot -x 0 -y 0 -z 0"
     output="screen" />
   <node
     name="fake_joint_calibration"

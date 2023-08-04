@@ -1,0 +1,29 @@
+digraph G {
+node [shape=box];
+"base_link" [label="base_link"];
+"l1" [label="l1"];
+"sl1" [label="sl1"];
+"l2" [label="l2"];
+"sl2" [label="sl2"];
+"r1" [label="r1"];
+"sr1" [label="sr1"];
+"r2" [label="r2"];
+"sr2" [label="sr2"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"base_link" -> "left1" [label="xyz: 0.030488 -0.027296 0.0193 \nrpy: 0 -0 -3.14149"]
+"left1" -> "l1"
+"l1" -> "suppleft1" [label="xyz: -0.041 -0.0195 0.0195 \nrpy: 0 -0 0"]
+"suppleft1" -> "sl1"
+"base_link" -> "left2" [label="xyz: 0.030488 0.027296 0.0193 \nrpy: 0 -0 -3.14149"]
+"left2" -> "l2"
+"l2" -> "suppleft2" [label="xyz: -0.041 -0.0195 0.0195 \nrpy: 0 -0 0"]
+"suppleft2" -> "sl2"
+"base_link" -> "right1" [label="xyz: -0.030488 -0.027296 0.0193 \nrpy: 0 -0 0"]
+"right1" -> "r1"
+"r1" -> "suppright1" [label="xyz: -0.041 -0.0195 0.0195 \nrpy: 0 -0 0"]
+"suppright1" -> "sr1"
+"base_link" -> "right2" [label="xyz: -0.030488 0.027296 0.0193 \nrpy: 0 -0 0"]
+"right2" -> "r2"
+"r2" -> "suppright2" [label="xyz: -0.041 -0.0195 0.0195 \nrpy: 0 -0 0"]
+"suppright2" -> "sr2"
+}
