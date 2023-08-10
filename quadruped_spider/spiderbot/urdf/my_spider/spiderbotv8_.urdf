@@ -12,7 +12,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/base_link.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/base_link.STL" />
             </geometry>
             <material name="">
                 <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -21,7 +21,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/base_link.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/base_link.STL" />
             </geometry>
         </collision>
     </link>
@@ -34,7 +34,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/r1.STL" />
             </geometry>
             <material name="">
                 <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -43,7 +43,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/r1.STL" />
             </geometry>
         </collision>
     </link>
@@ -63,7 +63,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/sr1.STL" />
             </geometry>
             <material name="">
                 <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -72,7 +72,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/sr1.STL" />
             </geometry>
         </collision>
     </link>
@@ -93,7 +93,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/r1.STL" />
             </geometry>
             <material name="">
                 <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -102,7 +102,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/r1.STL" />
             </geometry>
         </collision>
     </link>
@@ -122,7 +122,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/sr1.STL" />
             </geometry>
             <material name="">
                 <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -131,7 +131,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/sr1.STL" />
             </geometry>
         </collision>
     </link>
@@ -151,7 +151,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/r1.STL" />
             </geometry>
             <material name="">
                 <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -160,7 +160,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/r1.STL" />
             </geometry>
         </collision>
     </link>
@@ -180,7 +180,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/sr1.STL" />
             </geometry>
             <material name="">
                 <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -189,7 +189,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/sr1.STL" />
             </geometry>
         </collision>
     </link>
@@ -210,7 +210,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/r1.STL" />
             </geometry>
             <material name="">
                 <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -219,7 +219,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/r1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/r1.STL" />
             </geometry>
         </collision>
     </link>
@@ -239,7 +239,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/sr1.STL" />
             </geometry>
             <material name="">
                 <color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
@@ -248,7 +248,7 @@
         <collision>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="$(find spiderbot)/meshes/my_spider/sr1.STL" />
+                <mesh filename="package://spiderbot/meshes/my_spider/sr1.STL" />
             </geometry>
         </collision>
     </link>

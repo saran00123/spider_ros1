@@ -24,8 +24,8 @@
 					<horizontal>
 						<samples>720</samples>
 						<resolution>1</resolution>
-						<min_angle>-1.570796</min_angle>
-              			<max_angle>1.570796</max_angle>
+						<min_angle>-3.1415926536</min_angle>
+              			<max_angle>3.1415926536</max_angle>
               		</horizontal>
               	</scan>
               	<range>
@@ -106,7 +106,7 @@
 </gazebo>
 
  <joint type="fixed" name="camera_joint">
-   <origin xyz="0.05 0 0.12" rpy="0 0 0"/>
+   <origin xyz="0 -0.05 0.05" rpy="0 0 -1.5708"/>
    <child link="camera"/>
    <parent link="base_link"/>
    <axis xyz="0 0 0" rpy="0 0 0"/>
@@ -193,11 +193,11 @@
     
 
     <!--Dummy Link-->
-    <link name="dummy_link">
+    <!-- <link name="dummy_link">
 	</link>
 	<joint name="dummy_joint" type="fixed">
 		<parent link="dummy_link"/>
 		<child link="base_link"/>
-	</joint>
+	</joint> -->
   
 </robot>	
