@@ -56,56 +56,55 @@ if __name__=="__main__":
     pub_rear_left_link0 = rospy.Publisher('/spiderbot/controller_rear_left_link0/command', Float64, queue_size=10)
     pub_rear_right_link0 = rospy.Publisher('/spiderbot/controller_rear_right_link0/command', Float64, queue_size=10)
 
-    steer = 0
-    p = math.pi/6
+    p = [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
     try:
         print (msg)
         while(1):
             key = getKey()
             if key == 'w':
-                steer -= p
-                pub_front_right_link1.publish(steer)
+                p[0] += math.pi/150
+                pub_front_right_link1.publish(p[0])
             elif key == 'q':
-                steer -= p
-                pub_front_left_link1.publish(steer)
+                p[1] += math.pi/150
+                pub_front_left_link1.publish(p[1])
             if key == 'a':
-                steer -= p
-                pub_rear_left_link1.publish(steer)
+                p[2] += math.pi/150
+                pub_rear_left_link1.publish(p[2])
             elif key == 's':
-                steer -= p
-                pub_rear_right_link1.publish(steer)
+                p[3] += math.pi/150
+                pub_rear_right_link1.publish(p[3])
 
             if key == 'o':
-                steer += p
-                pub_front_right_link0.publish(steer)
+                p[4] += math.pi/150
+                pub_front_right_link0.publish(-(p[4]))
             elif key == 'i':
-                steer += p
-                pub_front_left_link0.publish(steer)
+                p[5] += math.pi/150
+                pub_front_left_link0.publish(p[5])
             if key == 'k':
-                steer += p
-                pub_rear_left_link0.publish(steer)
+                p[6] += math.pi/150
+                pub_rear_left_link0.publish(-(p[6]))
             elif key == 'l':
-                steer += p
-                pub_rear_right_link0.publish(steer)
+                p[7] += math.pi/150
+                pub_rear_right_link0.publish(p[7])
 
 
             elif key == ' ':
-                steer = 0.0
-                pub_front_right_link0.publish(steer)
-                pub_front_left_link0.publish(steer)
-                pub_rear_right_link0.publish(steer)
-                pub_rear_left_link0.publish(steer)
-                pub_front_right_link1.publish(steer)
-                pub_front_left_link1.publish(steer)
-                pub_rear_right_link1.publish(steer)
-                pub_rear_left_link1.publish(steer)
+                p = [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0]
+                pub_front_right_link0.publish(p[0])
+                pub_front_left_link0.publish(p[1])
+                pub_rear_right_link0.publish(p[2])
+                pub_rear_left_link0.publish(p[3])
+                pub_front_right_link1.publish(p[4])
+                pub_front_left_link1.publish(p[5])
+                pub_rear_right_link1.publish(p[6])
+                pub_rear_left_link1.publish(p[7])
 
             else:
                 if (key == '\x03'):
                     break
             
             if key in ['q','a','w','s','u','i','j','k',' ']:
-                print("steering angle: ", steer)
+                print("steering angle: ", p)
 
     except:
         print (e)

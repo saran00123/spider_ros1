@@ -1,0 +1,40 @@
+joint_state_controller:
+   type:         joint_state_controller/JointStateController
+   publish_rate: 20
+   
+hardware_interface:
+    joints:
+    - joint_front_right_link0
+    - joint_front_right_link1
+    - joint_front_left_link0
+    - joint_front_left_link1
+    - joint_rear_left_link0
+    - joint_rear_left_link1
+    - joint_rear_right_link0
+    - joint_rear_right_link1
+
+    sim_control_mode: 1
+
+spiderbot:
+  type: effort_controllers/JointTrajectoryController
+  joints: &leg_joint
+    - joint_front_right_link0
+    - joint_front_right_link1
+    - joint_front_left_link0
+    - joint_front_left_link1
+    - joint_rear_left_link0
+    - joint_rear_left_link1
+    - joint_rear_right_link0
+    - joint_rear_right_link1
+
+  constraints:
+    state_publish_rate: 50
+    action_monitor_rate: 20
+
+controller_list:
+
+  - name: spiderbot
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: True
+    joints: *leg_joint
